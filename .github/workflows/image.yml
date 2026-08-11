@@ -32,6 +32,6 @@ jobs:
         with:
           context: server
           platforms: linux/arm64,linux/amd64
-          file: Dockerfile
+          file: server/Dockerfile
           push: true
           tags: ghcr.io/${{ github.repository_owner }}/${{ github.event.repository.name }}:latest
