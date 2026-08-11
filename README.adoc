@@ -1,0 +1,45 @@
+= Task HTTP
+:icons: font
+You can use `curl` or `wget` commands
+
+> Branch: `http` +
+> Fenrir ID: `http`
+
+WARNING: Tests need update!!!
+
+Your solution must be located at `http`:
+
+[,text,subs="+macros"]
+----
+icon:folder[] pta-...
+├─ icon:folder[] term
+│  └─ icon:folder[] http
+│     ├─ icon:folder[] part-1
+│     │  └─ icon:file-text[] part-1.sh
+│     ├─ icon:folder[] part-2
+│     │  └─ icon:file-text[] part-2.sh
+│     ├─ icon:folder[] part-3
+│     │  └─ icon:file-text[] part-3.sh
+│     └─ icon:folder[] part-4
+│        └─ icon:file-text[] part-4.sh
+└─ icon:folder[] .git
+----
+
+== Tasks
+
+* (5) https://github.com/devtools-course/task-http/tree/main/part-1/README.md[HTTP-1. Return codes]
+* (10) https://github.com/devtools-course/task-http/tree/main/part-2/README.md[HTTP-2. POST requests]
+* (5) https://github.com/devtools-course/task-http/tree/main/part-3/README.md[HTTP-3. Redirections]
+* (5) https://github.com/devtools-course/task-http/tree/main/part-4/README.md[HTTP-4. Download files]
+
+
+== Copyright
+
+pass:[<i class="fab fa-creative-commons"></i>]
+pass:[<i class="fab fa-creative-commons-by"></i>]
+pass:[<i class="fab fa-creative-commons-nc"></i>]
+pass:[<i class="fab fa-creative-commons-sa"></i>]
+
+The project is licensed under the terms of the Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License.
+
+(C) 2026-present *Iwan Kalinin* <mailto:koefic.cien@gmail.com[koefic.cien@gmail.com]>
