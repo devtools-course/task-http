@@ -19,15 +19,175 @@ icon:folder[] ...
 └─ icon:folder[] .git
 ----
 
-== Tasks
+== Return codes (5 points)
 
-include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-1.adoc[]
+Create a script `part-1.sh` which runs an http request and parses the return code.
 
-include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-2.adoc[]
+The script must print the answer in the format `<DESC>(<CODE>)`
 
-include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-3.adoc[]
+Where `DESC` is a textual description of the return code:
 
-include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-4.adoc[]
+* `SUCCESS`
+* `REDIRECT`
+* `CLIENT_ERROR`
+* `SERVER_ERROR`
+
+And `CODE` is the return code
+
+To prevent waiting indefinitely for the response, set the maximum execution time to 5 sec.
+
+Synopsis::
+[,text]
+----
+./part-1.sh <URL>
+----
+
+Output::
+
+[source,cmd]
+----
+SUCCESS(200)
+----
+
+=== Error handling
+
+[%autowidth]
+|===
+h| Code | Description
+
+|77 | Unable to connect
+|88 | Timeout
+
+|===
+
+=== Questions
+
+* What are the 4 types of http codes?
+* Why is a timeout necessary?
+
+
+== POST requests (10 points)
+
+You are to create a script `part-2.sh` which sends a POST request to the server and parses its response.
+
+Request body is defined by the following class:
+
+[source,kotlin]
+----
+data class pair(
+    val x : Int,
+    val y : Int,
+)
+----
+
+You must support three content types:
+
+- JSON
+- YAML
+- XML
+
+CAUTION: XML body must be wrapped in `<req version="1.1">...</req>`.
+
+Response body is defined by this class:
+
+[source,kotlin]
+----
+data class response(
+    val result : Int,
+)
+----
+
+The script must print only one number: the value of `result`.
+
+Synopsis::
+
+[source,text]
+----
+./part-2.sh {-x | -y | -j} <URL> <x> <y>
+
+Options:
+   -x        XML format
+   -y        YAML format
+   -j        JSON format
+----
+
+Output::
+
+[source,text]
+----
+56
+----
+
+=== Error handling
+
+Is not needed. We guarantee the correctness of the input data.
+
+=== Questions
+
+* How does the server understand which format is used?
+* Which method is used by default in `curl`?
+* What is the difference between `GET` & `POST`?
+
+
+== Redirections (5 points)
+
+You are to create a script `part-3.sh` which sends a request to the server and collects all redirections.
+
+The script must print all URLs that are encountered when resolving the server location.
+
+Synopsis::
+
+[source,cmd]
+----
+./part-3.sh <URL>
+----
+
+Output::
+
+[source,cmd]
+----
+http://google.de/
+http://www.google.de/
+http://www.google.com/
+----
+
+=== Error handling
+
+Is not needed. We guarantee the correctness of the input data.
+
+=== Questions
+
+* How can the detailed information about an HTTP request be obtained?
+
+== Download files (5 points)
+
+You are to create a script `part-4.sh` which downloads a file from a URL. The file must be saved to the provided directory.
+
+Synopsis::
+
+[source,cmd]
+----
+./part-4.sh <URL> <DIRPATH>
+----
+
+The name is defined in the response:
+
+[source,cmd]
+----
+< HTTP/1.1 200 OK
+< Accept-Ranges: bytes
+< Content-Disposition: attachment; filename="file.txt"
+----
+
+=== Error handling
+
+Is not needed. We guarantee the correctness of the input data.
+
+=== Questions
+
+* How can the filename be obtained?
+* What happens if you try accessing the URL without explicitly downloading the file?
+
 
 == Copyright
 
