@@ -35,7 +35,7 @@ Synopsis::
 
 [source,text]
 ----
-./part-2.sh (-x|-y|-j) <URL> <x> <y>
+./part-2.sh {-x | -y | -j} <URL> <x> <y>
 
 Options:
    -x        XML format

@@ -3,7 +3,8 @@
 You can use `curl` or `wget` commands
 
 > Branch: `http` +
-> Fenrir ID: `http`
+> Fenrir ID: `http` +
+> Points: `25`
 
 Your solution must be located at `http`:
 
