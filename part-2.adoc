@@ -18,7 +18,7 @@ You must support three content types:
 - YAML
 - XML
 
-CAUTION:: XML body must be wrapped in `<req version="1.1">...</req>`.
+CAUTION: XML body must be wrapped in `<req version="1.1">...</req>`.
 
 Response body is defined by this class:
 
