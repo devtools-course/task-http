@@ -1,27 +1,29 @@
-# HTTP
-
-> Part 3. Redirections
+== Redirections (5 points)
 
 You are to create a script `part-3.sh` which sends a request to the server and collects all redirections.
 
 The script must print all URLs that are encountered when resolving the server location.
 
-**Synopsis:**
-```cmd
-./part-3.sh <URL>
-```
+Synopsis::
 
-**Output:**
-```cmd
+[source,cmd]
+----
+./part-3.sh <URL>
+----
+
+Output::
+
+[source,cmd]
+----
 http://google.de/
 http://www.google.de/
 http://www.google.com/
-```
-## Error handling
+----
+
+=== Error handling
 
 Is not needed. We guarantee the correctness of the input data.
 
-
----
+=== Questions
 
 * How can the detailed information about an HTTP request be obtained?

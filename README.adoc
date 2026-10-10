@@ -11,20 +11,22 @@ Your solution must be located at `http`:
 ----
 icon:folder[] ...
 ├─ icon:folder[] http
-│  ├─ icon:file-text[] part-1.sh
-│  ├─ icon:file-text[] part-2.sh
-│  ├─ icon:file-text[] part-3.sh
-│  └─ icon:file-text[] part-4.sh
+│  ├─ icon:file-code[] part-1.sh
+│  ├─ icon:file-code[] part-2.sh
+│  ├─ icon:file-code[] part-3.sh
+│  └─ icon:file-code[] part-4.sh
 └─ icon:folder[] .git
 ----
 
 == Tasks
 
-* (5) https://github.com/devtools-course/task-http/tree/main/part-1/README.md[HTTP-1. Return codes]
-* (10) https://github.com/devtools-course/task-http/tree/main/part-2/README.md[HTTP-2. POST requests]
-* (5) https://github.com/devtools-course/task-http/tree/main/part-3/README.md[HTTP-3. Redirections]
-* (5) https://github.com/devtools-course/task-http/tree/main/part-4/README.md[HTTP-4. Download files]
+include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-1.adoc[]
 
+include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-2.adoc[]
+
+include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-3.adoc[]
+
+include::https://raw.githubusercontent.com/devtools-course/task-http/refs/heads/main/part-4.adoc[]
 
 == Copyright
 

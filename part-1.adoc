@@ -1,42 +1,45 @@
-# HTTP
-
-> Part 1. Return codes
+== Return codes (5 points)
 
 Create a script `part-1.sh` which runs an http request and parses the return code.
 
 The script must print the answer in the format `<DESC>(<CODE>)`
 
 Where `DESC` is a textual description of the return code:
-- SUCCESS
-- REDIRECT
-- CLIENT_ERROR
-- SERVER_ERROR
+
+* `SUCCESS`
+* `REDIRECT`
+* `CLIENT_ERROR`
+* `SERVER_ERROR`
 
 And `CODE` is the return code
 
 To prevent waiting indefinitely for the response, set the maximum execution time to 5 sec.
 
-**Synopsis:**
-```cmd
+Synopsis::
+[,text]
+----
 ./part-1.sh <URL>
-```
+----
 
-**Output:**
-```cmd
+Output::
+
+[source,cmd]
+----
 SUCCESS(200)
-```
-## Error handling
+----
 
-### Unable to connect
+=== Error handling
 
-Exit with code 77
+[%autowidth]
+|===
+h| Code | Description
 
-### Timeout
+|77 | Unable to connect
+|88 | Timeout
 
-Exit with code 88
+|===
 
-
----
+=== Questions
 
 * What are the 4 types of http codes?
 * Why is a timeout necessary?
