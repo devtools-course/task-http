@@ -13,14 +13,10 @@ Your solution must be located at `http`:
 ----
 icon:folder[] ...
 ├─ icon:folder[] http
-│  ├─ icon:folder[] part-1
-│  │  └─ icon:file-text[] part-1.sh
-│  ├─ icon:folder[] part-2
-│  │  └─ icon:file-text[] part-2.sh
-│  ├─ icon:folder[] part-3
-│  │  └─ icon:file-text[] part-3.sh
-│  └─ icon:folder[] part-4
-│     └─ icon:file-text[] part-4.sh
+│  ├─ icon:file-text[] part-1.sh
+│  ├─ icon:file-text[] part-2.sh
+│  ├─ icon:file-text[] part-3.sh
+│  └─ icon:file-text[] part-4.sh
 └─ icon:folder[] .git
 ----
 
