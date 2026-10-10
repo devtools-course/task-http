@@ -5,8 +5,6 @@ You can use `curl` or `wget` commands
 > Branch: `http` +
 > Fenrir ID: `http`
 
-WARNING: Tests need update!!!
-
 Your solution must be located at `http`:
 
 [,text,subs="+macros"]
