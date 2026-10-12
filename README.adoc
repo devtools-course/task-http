@@ -4,7 +4,7 @@ You can use `curl` or `wget` commands
 
 > Branch: `http` +
 > Fenrir ID: `http` +
-> Points: `25`
+> Points: `30`
 
 Your solution must be located at `http`:
 
@@ -129,7 +129,7 @@ Is not needed. We guarantee the correctness of the input data.
 * What is the difference between `GET` & `POST`?
 
 
-== Redirections (5 points)
+== Redirections (10 points)
 
 You are to create a script `part-3.sh` which sends a request to the server and collects all redirections.
 
