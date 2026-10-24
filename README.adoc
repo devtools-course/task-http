@@ -37,14 +37,14 @@ And `CODE` is the return code
 To prevent waiting indefinitely for the response, set the maximum execution time to 5 sec.
 
 Synopsis::
-[,text]
+[,console]
 ----
 ./part-1.sh <URL>
 ----
 
 Output::
 
-[source,cmd]
+[source,text]
 ----
 SUCCESS(200)
 ----
@@ -137,14 +137,14 @@ The script must print all URLs that are encountered when resolving the server lo
 
 Synopsis::
 
-[source,cmd]
+[source,console]
 ----
 ./part-3.sh <URL>
 ----
 
 Output::
 
-[source,cmd]
+[source,text]
 ----
 http://google.de/
 http://www.google.de/
@@ -165,14 +165,14 @@ You are to create a script `part-4.sh` which downloads a file from a URL. The fi
 
 Synopsis::
 
-[source,cmd]
+[source,console]
 ----
 ./part-4.sh <URL> <DIRPATH>
 ----
 
 The name is defined in the response:
 
-[source,cmd]
+[source,text]
 ----
 < HTTP/1.1 200 OK
 < Accept-Ranges: bytes
